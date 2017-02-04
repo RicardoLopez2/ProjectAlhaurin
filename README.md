@@ -1,11 +1,11 @@
-Sammon mapping in Python
-========================
-Date: 18 April 2014
+Sample repository -- Public 
+============================
+Date: 3 February 2017
 
 sammontest.py
 -------------
 Run sammontest.py() with no arguments to test sammon.py
-on Fisher's iris dataset
+on the Breast Cancer  dataset
 
 sammon.py
 ---------
@@ -37,8 +37,8 @@ arguments, y = sammon(x,n,[OPTS]):
 The default options are retrieved by calling sammon(x) with no
 parameters.
 
-Authors
--------
+All the Sammon code is takin from: 
+---------------------------------------------------
 Tom J. Pollard (https://twitter.com/tompollard)
 
 Ported from MATLAB implementation by 
