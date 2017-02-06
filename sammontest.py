@@ -29,18 +29,33 @@ def main():
    X = data_BC.data
    target = data_BC.target
    names = data_BC.target_names
+   
+   #New Patient
+   NewPatient = np.array([19.55,15.49,128,1000,0.1079,0.18347,0.4352,0.1196,0.2616,0.06752,1.223,0.4489,7.87,168.8,0.01101,0.04272,0.08624,0.02737,0.06041,0.007503,23.73,17.21,153.4,1633,0.1534,0.3391,0.5819,0.22,0.4714,0.09721])
+   X = np.vstack([X, NewPatient]) 
+   names = np.hstack([names, 'diagnosis'])   
+   target = np.hstack([target, 2])
 
    # Run the Sammon projection
-   [y,E] = sammon(X, inputdist = 'raw', maxiter = 500)
+   [y,E] = sammon(X, inputdist = 'raw', maxiter = 50)
 
    # Plot
    plt.scatter(y[target ==0, 0], y[target ==0, 1], s=20, c='r', marker='o',label=names[0])
    plt.scatter(y[target ==1, 0], y[target ==1, 1], s=20, c='b', marker='D',label=names[1])
-   #plt.scatter(y[target ==2, 0], y[target ==2, 1], s=20, c='y', marker='v',label=names[2])
+   plt.scatter(y[target ==2, 0], y[target ==2, 1], s=20, c='y', marker='v',label=names[2])
    plt.title('Sammon projection for Breast Cancer Data')
    plt.legend(loc=2)
+   plt.annotate('patient', xy=(y[target ==2, 0], y[target ==2, 1]), xytext=(y[target ==2, 0]+800, y[target ==2, 1]+800), arrowprops=dict(facecolor='black', shrink=0.05),)
    plt.show()
 
+   #plt.scatter(y[target ==0, 0], y[target ==0, 1], s=20, c='r', marker='o',label=names[0])
+   #plt.scatter(y[target ==1, 0], y[target ==1, 1], s=20, c='b', marker='D',label=names[1])
+   plt.scatter(y[target ==2, 0], y[target ==2, 1], s=20, c='y', marker='v',label=names[2])
+   plt.title('Sammon projection for Breast Cancer Data - patient')
+   plt.legend(loc=2)
+   plt.show()
+   
+   
 if __name__ == "__main__":
     main()
 
