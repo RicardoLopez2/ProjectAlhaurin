@@ -45,7 +45,7 @@ def main():
    plt.scatter(y[target ==2, 0], y[target ==2, 1], s=20, c='y', marker='v',label=names[2])
    plt.title('Sammon projection for Breast Cancer Data')
    plt.legend(loc=2)
-   plt.annotate('patient', xy=(y[target ==2, 0], y[target ==2, 1]), xytext=(y[target ==2, 0]+800, y[target ==2, 1]+800), arrowprops=dict(facecolor='black', shrink=0.05),)
+   plt.annotate('patient', xy=(y[target ==2, 0], y[target ==2, 1]), xytext = (min([y[target ==2, 0]+800, plt.axis()[1]]), min([y[target ==2, 1]+800, plt.axis()[3]])), arrowprops=dict(facecolor='black', shrink=0.05),)
    plt.show()
 
    #plt.scatter(y[target ==0, 0], y[target ==0, 1], s=20, c='r', marker='o',label=names[0])
