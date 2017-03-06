@@ -52,6 +52,8 @@ parameters.
 --------------
 
 Before using, run pip install -r requirements.txt to install dependencies.
+npm install bluebutton
+
 It will parse all files in TestData and store the results in TestResults (this folder needs to be created in advance)
 
 **cdda.py
