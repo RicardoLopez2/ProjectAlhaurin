@@ -1,5 +1,5 @@
-Repository for tools and utils to be used with my projects -- Public 
-==================================================================
+Repository for tools and utils -- Public 
+========================================
 Date Creation: 3 February 2017
 Last Modified: 5 March 2017
 
@@ -10,14 +10,15 @@ Three projects here:
 
 
 1. Sammon Projection
+----------------------
 
-sammontest.py
--------------
+**sammontest.py
+
 Run sammontest.py() with no arguments to test sammon.py
 on the Breast Cancer  dataset
 
-sammon.py
----------
+**sammon.py
+
 Simple python implementation of Sammon's non-linear mapping 
 algorithm [1]. Perform Sammon mapping on dataset x
 
@@ -48,8 +49,14 @@ parameters.
 
 
 2. CCDA Parser
+--------------
+
 Before using, run pip install -r requirements.txt to install dependencies.
 It will parse all files in TestData and store the results in TestResults (this folder needs to be created in advance)
+
+**cdda.py
+
+File with all the logic to parse the file. Added handling of Observations.
 
 
 
