@@ -9,9 +9,7 @@ Three projects here:
 3. PDF parser.
 
 
-__________________________________________________________________
 1. Sammon Projection
-__________________________________________________________________
 
 sammontest.py
 -------------
@@ -48,10 +46,8 @@ arguments, y = sammon(x,n,[OPTS]):
 The default options are retrieved by calling sammon(x) with no
 parameters.
 
-__________________________________________________________________
-2. CCDA Parser
-__________________________________________________________________
 
+2. CCDA Parser
 Before using, run pip install -r requirements.txt to install dependencies.
 It will parse all files in TestData and store the results in TestResults (this folder needs to be created in advance)
 
