@@ -1,6 +1,17 @@
-Sample repository -- Public 
-============================
-Date: 3 February 2017
+Repository for tools and utils to be used with my projects -- Public 
+==================================================================
+Date Creation: 3 February 2017
+Last Modified: 5 March 2017
+
+Three projects here:
+1. Sammon projection experiment.
+2. CCDA parser.
+3. PDF parser.
+
+
+__________________________________________________________________
+1. Sammon Projection
+__________________________________________________________________
 
 sammontest.py
 -------------
@@ -37,12 +48,25 @@ arguments, y = sammon(x,n,[OPTS]):
 The default options are retrieved by calling sammon(x) with no
 parameters.
 
-All the Sammon code is takin from: 
----------------------------------------------------
-Tom J. Pollard (https://twitter.com/tompollard)
+__________________________________________________________________
+2. CCDA Parser
+__________________________________________________________________
 
+Before using, run pip install -r requirements.txt to install dependencies.
+It will parse all files in TestData and store the results in TestResults (this folder needs to be created in advance)
+
+
+
+
+
+Sources for the code:
+--------------------------------------------------
+All the Sammon code is takin from: 
+Tom J. Pollard (https://twitter.com/tompollard)
 Ported from MATLAB implementation by 
   Gavin C. Cawley and Nicola L. C. Talbot
+
+CCDA code is built on top of https://github.com/hinthealth/pyccda
 
 References
 ----------
